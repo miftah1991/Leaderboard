@@ -1,11 +1,42 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <title>Getting Started</title>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Leaderboard</title>
+</head>
+<body>
+  <div class="container">
+    <section class="header-section">
+      <h1>Leaderboard</h1>
+  </section>
+  <section class="main-section">
+      <div class="list-section">
+          <div class="list-section-title">
+              <h2>Recent scores</h2>
+              <button type="button" class="btn" id="refresh-btn">Refresh</button>
+          </div>
+          <div class="list">
+            
+            <ul id="leader-lis">
 
-  </head>
-  <body>
-
-  </body>
+            </ul>
+          </div>
+      </div>
+      <div class="add-section">
+          <div class="section-title">
+              <h2>Add your score</h2>
+              
+          </div>
+          <div class="add-leaderboard-elements">
+            <input type="text" class="name" placeholder="name" required> <br><br>
+            <input type="number" class="score" placeholder="score" required> <br><br>
+            <p class="validate-error">Please add leader board name and score</p>
+            <button type="button" class="Add">Add</button>
+          </div>
+      </div>
+  </section>
+  </div>
+</body>
 </html>

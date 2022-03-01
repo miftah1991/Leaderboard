@@ -1,8 +1,8 @@
 // imnpport _ from 'lodash';
-
+import getData from './modules/generateLeaders.js';
+import formData from './modules/forms.js';
 import './style.css';
 
-
-window.onload = () => {
- console.log('hellow ')
-};
+document.querySelector('.Add').addEventListener('click', formData);
+getData();
+document.querySelector('#refresh-btn').addEventListener('click', () => window.location.reload());
