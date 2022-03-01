@@ -2,9 +2,9 @@
 
 # Event Page
 
-> Leader Board.
+> The leaderboard website displays scores submitted by different leaders. It also allows you to add your score. All data is stored in localstorage. Build with Html, CSS, JS, and Webpack.
 
-![screenshot](https://github.com/miftah1991/Awesomebooks/blob/milestones/img-1.png)
+![screenshot](https://github.com/miftah1991/Leaderboard/blob/structure/ScreenShot.png)
 
 
 ## Built With
