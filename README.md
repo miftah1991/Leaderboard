@@ -2,7 +2,7 @@
 
 # Event Page
 
-> The leaderboard website displays scores submitted by different leaders. It also allows you to add your score. All data is stored in localstorage. Build with Html, CSS, JS, and Webpack.
+> The leaderboard website displays scores submitted by different leaders. It also allows you to add your score. The data is fetched from api and it also allow us to submit new score to API. Build with Html, CSS, JS, and Webpack.
 
 ![screenshot](https://github.com/miftah1991/Leaderboard/blob/structure/ScreenShot.png)
 
