@@ -36,7 +36,7 @@ npm start
 
 ## Live Demo
 
-[Live Demo Link](https://miftah1991.github.io/Leaderboard/)
+[Live Demo Link](https://miftah1991.github.io/Leaderboard/dist/)
 
 
 ## Author
