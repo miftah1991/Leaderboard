@@ -27,7 +27,11 @@ To get a local copy follow these simple steps.
 ```
 npm install
 ```
-4.- To see the home page open index.html with your browser.
+4.- To see the home page run execute below command.
+```
+npm start
+```
+
 
 
 ## Live Demo
