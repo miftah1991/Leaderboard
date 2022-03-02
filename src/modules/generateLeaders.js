@@ -2,7 +2,6 @@ const getData = (data) => {
   const container = document.getElementById('leader-lis');
   container.innerHTML = '';
   if (data != null) {
-    console.log(data)
     data.result.forEach((element, index) => {
       const li = document.createElement('li');
       li.className = 'elements';

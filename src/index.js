@@ -1,5 +1,5 @@
 // imnpport _ from 'lodash';
-import {getAPIData} from './modules/leaders';
+import { getAPIData } from './modules/leaders.js';
 import formData from './modules/forms.js';
 import './style.css';
 
