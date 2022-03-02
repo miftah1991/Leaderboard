@@ -1,11 +1,9 @@
-import getData from './generateLeaders.js';
-import Leaders from './leaders.js';
+import { postData, getAPIData } from './leaders.js';
 
 const addLeader = (name, score) => {
-  const leader = new Leaders(name, score);
-  Leaders.scores.push(leader);
-  Leaders.saveLocalStorage();
-  getData();
+  const elementArray = { user: name, score };
+  postData(elementArray);
+  getAPIData();
   document.querySelector('.name').value = '';
   document.querySelector('.score').value = '';
 };

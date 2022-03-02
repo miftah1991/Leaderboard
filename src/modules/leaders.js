@@ -1,14 +1,19 @@
-class Leaders {
-    static scores = [];
+import getData from './generateLeaders.js';
 
-    constructor(name, score) {
-      this.name = name;
-      this.score = score;
-    }
+const dataURL = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/6uj0uqnZpshKtXlAZwzJ/scores';
 
-    static saveLocalStorage() {
-      localStorage.setItem('leaders', JSON.stringify(this.scores));
-    }
-}
+const getAPIData = async () => {
+  const response = await (await fetch(dataURL)).json();
+  getData(response);
+};
+const postData = async (data) => {
+  await fetch(dataURL, {
+    method: 'POST',
+    body: JSON.stringify(data),
+    headers: {
+      'Content-type': 'application/json; charset=UTF-8',
+    },
+  });
+};
 
-export default Leaders;
+export { getAPIData, postData };
