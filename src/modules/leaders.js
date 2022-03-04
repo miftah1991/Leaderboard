@@ -13,18 +13,17 @@ const postData = async (data) => {
     headers: {
       'Content-type': 'application/json; charset=UTF-8',
     },
-  }).then(response => response.json())
-  .then(data => {
-    const elem = document.getElementById('responseMessage');
-    document.querySelector('.validate-error').style.display = 'block';
-    elem.classList.remove('validate-error');
-    elem.classList.add('success-message')
-    elem.innerHTML = data.result;
-    setTimeout(() => {
-      document.getElementById('responseMessage').style.display = 'none';
-    }, 1000);
-    console.log(data.result)
-  });
+  }).then((response) => response.json())
+    .then((data) => {
+      const elem = document.getElementById('responseMessage');
+      document.querySelector('.validate-error').style.display = 'block';
+      elem.classList.remove('validate-error');
+      elem.classList.add('success-message');
+      elem.innerHTML = data.result;
+      setTimeout(() => {
+        document.getElementById('responseMessage').style.display = 'none';
+      }, 1000);
+    });
 };
 
 export { getAPIData, postData };
