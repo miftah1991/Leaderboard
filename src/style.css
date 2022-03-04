@@ -21,6 +21,16 @@ body {
   border-bottom: 1px solid black;
 }
 
+.success-message {
+  display: block;
+  color: green;
+  font-size: 16px;
+}
+
+.hidden {
+  display: none;
+}
+
 h2:hover {
   transform: skewY(2deg) skewX(15deg) scale(1.1);
   text-shadow: 0.5rem 1rem 2rem #000;
