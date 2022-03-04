@@ -1,4 +1,4 @@
-import { postData, getAPIData } from './leaders.js';
+import { postData } from './leaders.js';
 
 const addLeader = (name, score) => {
   const elementArray = { user: name, score };
