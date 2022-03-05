@@ -2,7 +2,8 @@ const getData = (data) => {
   const container = document.getElementById('leader-lis');
   container.innerHTML = '';
   if (data != null) {
-    data.result.forEach((element, index) => {
+    const newArray = data.result.sort((a, b) => (Number((a.score) > Number(b.score)) ? -1 : 1));
+    newArray.forEach((element, index) => {
       const li = document.createElement('li');
       li.className = 'elements';
       const titleDiv = document.createElement('div');

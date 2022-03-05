@@ -50,6 +50,14 @@ h2:hover {
   justify-content: space-around;
 }
 
+.list {
+  max-height: 50vh;
+  overflow-y: scroll;
+  margin-right: 2vw;
+  padding-top: 1px;
+  margin-top: 1vh;
+}
+
 .add-section {
   display: flex;
   flex-direction: column;

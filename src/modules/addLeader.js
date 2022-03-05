@@ -1,7 +1,7 @@
 import { postData } from './leaders.js';
 
 const addLeader = (name, score) => {
-  const elementArray = { user: name, score };
+  const elementArray = { user: name, score: Number(score) };
   postData(elementArray);
   document.querySelector('.name').value = '';
   document.querySelector('.score').value = '';
